@@ -16,7 +16,7 @@ across three generations of TKIs.
 
 ### Column descriptions
 
-| Column | What it means | Why it matters |
+| Column | What it means | Significance |
 |---|---|---|
 | Name | Drug name | Identifies the compound |
 | CID | PubChem's unique ID number | Used to look up the compound in any chemistry database |
