@@ -16,16 +16,16 @@ across three generations of TKIs.
 
 ### Column descriptions
 
-| Column | What it means | Significance |
-|---|---|---|
-| Name | Drug name | Identifies the compound |
-| CID | PubChem's unique ID number | Used to look up the compound in any chemistry database |
-| Formula | Atoms that make up the molecule | Shows molecular complexity at a glance |
-| MW_g_mol | Molecular weight in g/mol | Heavier molecules absorb poorly — EGFR TKIs aim to stay under 500 g/mol for oral use |
-| XLogP | How oily vs watery the drug is | EGFR TKIs must be slightly oily to cross lung cell membranes and reach the tumour |
-| HB_Donors | Number of hydrogen bond donor groups | Too many donors reduce membrane permeability — directly affects how much drug reaches the target |
-| HB_Acceptors | Number of hydrogen bond acceptor groups | Influences how tightly the drug binds to the EGFR kinase domain |
-| Rotatable_Bonds | How flexible the molecule is | More flexible molecules can adapt their shape to fit mutant EGFR pockets like T790M |
-| TPSA_A2 | Topological polar surface area | Predicts whether the drug survives oral dosing and reaches lung tissue intact |
-| Lipinski_Ro5 | Pass/fail oral bioavailability check | Directly predicts if the drug can be prescribed as a tablet — critical for outpatient NSCLC treatment |
-| SMILES | Text code representing molecular structure | Allows the molecule to be visualised, docked, or modelled computationally |
+| Column | Property | Significance |
+| --- | --- | --- |
+| Name | Drug name | Allows cross-referencing with clinical trial records, pharmacological literature, and regulatory approval databases |
+| CID | PubChem unique compound identifier | Enables direct integration with PubChem, ChEMBL, and other cheminformatics platforms for downstream analysis |
+| Formula | Elemental composition of the molecule | Reflects molecular complexity and the presence of pharmacophoric elements such as halogens and nitrogen heterocycles |
+| MW (g/mol) | Molecular weight in grams per mole | A primary Lipinski parameter. EGFR TKIs ideally remain below 500 g/mol to maintain oral bioavailability in NSCLC patients |
+| XLogP | Partition coefficient measuring lipophilicity | Determines membrane permeability. Sufficient lipophilicity is required to penetrate lung tissue and reach the intracellular kinase domain |
+| HB Donors | Number of hydrogen bond donor groups (NH, OH) | Excessive donors reduce passive membrane permeability, limiting intracellular drug accumulation at the EGFR active site |
+| HB Acceptors | Number of hydrogen bond acceptor atoms (N, O) | Governs binding affinity within the ATP binding cleft of EGFR and influences selectivity over off-target kinases |
+| Rotatable Bonds | Count of freely rotating single bonds | Reflects conformational flexibility, relevant to the ability of the molecule to adapt to mutant EGFR isoforms such as T790M and C797S |
+| TPSA (Å²) | Topological polar surface area | Predicts gastrointestinal absorption and lung tissue penetration. Values below 140 Å² are associated with adequate oral absorption |
+| Lipinski Ro5 | Compliance with Lipinski's Rule of Five | Serves as a rapid computational filter for oral bioavailability, directly relevant to outpatient tablet prescribing in NSCLC |
+| SMILES | Simplified Molecular Input Line Entry System string | Machine readable molecular representation enabling structure visualisation, similarity searching, and computational docking studies |
