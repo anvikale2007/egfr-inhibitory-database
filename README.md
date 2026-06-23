@@ -18,7 +18,7 @@ across three generations of TKIs.
 
 | Column | Property | Significance |
 | --- | --- | --- |
-| Name | Drug name | Allows cross-referencing with clinical trial records, pharmacological literature, and regulatory approval databases |
+| Name | Drug name | Allows cross referencing with clinical trial records, pharmacological literature, and regulatory approval databases |
 | CID | PubChem unique compound identifier | Enables direct integration with PubChem, ChEMBL, and other cheminformatics platforms for downstream analysis |
 | Formula | Elemental composition of the molecule | Reflects molecular complexity and the presence of pharmacophoric elements such as halogens and nitrogen heterocycles |
 | MW (g/mol) | Molecular weight in grams per mole | A primary Lipinski parameter. EGFR TKIs ideally remain below 500 g/mol to maintain oral bioavailability in NSCLC patients |
