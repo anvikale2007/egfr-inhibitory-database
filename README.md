@@ -3,7 +3,7 @@
 A Python script that pulls molecular data for 10 EGFR inhibitors 
 from the PubChem API and builds a searchable CSV database.
 
-### Parameters
+### Physicochemical properties of EGFR inhibitors
 SMILES strings, molecular weights, XLogP, H-bond counts, TPSA, 
 and Lipinski Rule of Five compliance for gefitinib, erlotinib, 
 osimertinib, and 7 other EGFR TKIs used in NSCLC treatment.
