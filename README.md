@@ -13,3 +13,15 @@ EGFR inhibitors are the frontline therapy for NSCLC patients
 with sensitizing mutations. This database was built to support 
 computational analysis of structure-activity relationships 
 across three generations of TKIs.
+
+### Column descriptions
+
+| Column | What it means |
+|---|---|
+| MW_g_mol | Molecular weight in g/mol. Heavier molecules absorb less easily |
+| XLogP | How oily vs watery the drug is. EGFR TKIs need to be slightly oily to cross cell membranes |
+| HB_Donors | Hydrogen bond donors — affects how the molecule binds to its target protein |
+| HB_Acceptors | Hydrogen bond acceptors — same idea, different direction |
+| TPSA_A2 | Predicts oral absorption — higher values mean harder to absorb as a tablet |
+| Lipinski_Ro5 | Pass/fail checklist for oral bioavailability |
+| SMILES | Text encoding of the full molecular structure — readable by chemistry software |
